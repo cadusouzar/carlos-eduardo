@@ -1,11 +1,14 @@
 import { ButtonText, Column } from "objects"
+import { Link } from "react-router-dom"
 
 export const Buttons = () => {
   return( 
     <Column>
-      <ButtonText text="Sobre mim" variant="aboutme"/>
-      <ButtonText text="Projetos" variant="project"/>
-      <ButtonText text="Habilidades" variant="skills"/>
+    <Link to='/skills'>
+      <ButtonText text="habilidades" variant="skills"/>
+    </Link>
+      <ButtonText text="projetos" variant="project"/>
+      <ButtonText text="sobre mim" variant="aboutme"/>
     </Column>
   )
 }

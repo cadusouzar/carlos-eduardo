@@ -7,8 +7,8 @@ type TextProps = {
 
 export const Text: React.FC<TextProps> = ({ text, size}) => {
   return (
-    <Typist cursor={{blink: false, show: false, hideWhenDone: false}}>
-      <p className={`text-font-primary ${size} font-montserrat`}>{text}</p>
+    <Typist cursor={{blink: false, show: false, hideWhenDone: false}} avgTypingDelay={40}>
+      <p className={`text-font-primary ${size} font-montserrat cursor-default`}>{text}</p>
     </Typist>
   )
 }

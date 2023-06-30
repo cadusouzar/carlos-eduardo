@@ -10,6 +10,7 @@ module.exports = {
         'font-primary': '#FFFFFF',
       },
       fontSize:{
+        'very-small': '26px',
         'small':'1.8125rem',
         'medium-small':'2.25rem',
         'medium': '2.4375rem',
@@ -18,6 +19,12 @@ module.exports = {
       },
       fontFamily:{
         montserrat: ['Montserrat', 'sans-serif'],
+      },
+      aspectRatio:{
+        '1/1.5': '1/1.5',
+      },
+      blur:{
+        primary: '3.5rem'
       },
     },
   },

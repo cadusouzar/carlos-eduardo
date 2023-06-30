@@ -6,13 +6,12 @@ export const Home = () => {
     <>
       <Texts/>
       <div className="flex items-center">
-        <Animation variant="hi" width="1250px" height="800px" transform="scaleX(-1)" position="relative" top="25px"/>
+          <Animation variant="hi" width="1250px" height="800px" transform="scaleX(-1)" position="relative" top="25px" cursor="default"/>
         <div className="relative top-10 h-full flex flex-col items-center">
           <Buttons/>
           <Contacts/>
         </div>
       </div>
-
     </>
   )
 }

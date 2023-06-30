@@ -9,9 +9,10 @@ type AnimationProps = {
   marginLeft?: string
   top?: string
   position?: any
+  cursor?: string
 }
 
-export const Animation: React.FC<AnimationProps> = ({variant, width, height, transform, marginLeft, top, position}) => {
+export const Animation: React.FC<AnimationProps> = ({variant, width, height, transform, marginLeft, top, position, cursor = 'pointer'}) => {
   const [animationSrc, setAnimationSrc] = useState()
 
   useEffect(() => {
@@ -23,6 +24,6 @@ export const Animation: React.FC<AnimationProps> = ({variant, width, height, tra
     mount()
   }, [variant])
 
-  return <Lottie animationData={animationSrc} alt={variant} loop={true} autoplay={true} style={{width:width, height:height, transform: transform, marginLeft: marginLeft, top: top, position: position}}/>
+  return <Lottie animationData={animationSrc} alt={variant} loop={true} autoplay={true} style={{width:width, height:height, transform: transform, marginLeft: marginLeft, top: top, position: position, cursor: cursor}}/>
 
 } 
