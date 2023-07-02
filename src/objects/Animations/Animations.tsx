@@ -13,25 +13,57 @@ type AnimationProps = {
   link?: string
 }
 
-export const Animation: React.FC<AnimationProps> = ({variant, width, height, transform, marginLeft, top, position, cursor = 'pointer', link}) => {
-  const [animationSrc, setAnimationSrc] = useState()
-  const goToPage = () => {
-    window.open(`${link}`, '_blank');
-  }
+export const Animation: React.FC<AnimationProps> = ({
+  variant,
+  width,
+  height,
+  transform,
+  marginLeft,
+  top,
+  position,
+  cursor = 'pointer',
+  link,
+}) => {
+  const [animationSrc, setAnimationSrc] = useState();
 
   useEffect(() => {
     const mount = async () => {
-      const result = await import (`./${variant}.json`)
-      setAnimationSrc(result.default)
-    }
+      const result = await import(`./${variant}.json`);
+      setAnimationSrc(result.default);
+    };
 
-    mount()
-  }, [variant])
+    mount();
+  }, [variant]);
+
+  const goToPage = () => {
+    window.open(link, '_blank');
+  };
+
+  const buttonProps = link ? { onClick: goToPage } : {};
 
   return (
-    <button onClick={() => goToPage()}>
-      <Lottie animationData={animationSrc} alt={variant} loop={true} autoplay={true} style={{width:width, height:height, transform: transform, marginLeft: marginLeft, top: top, position: position, cursor: cursor}}/>
+    <button {...buttonProps}>
+      <Lottie
+        animationData={animationSrc}
+        alt={variant}
+        loop={true}
+        autoplay={true}
+        style={{
+          width: width,
+          height: height,
+          transform: transform,
+          marginLeft: marginLeft,
+          top: top,
+          position: position,
+          cursor: cursor,
+        }}
+      />
     </button>
-  )
+  );
+};
 
-} 
+
+
+
+
+
