@@ -1,3 +1,4 @@
+import { Icon } from 'objects/Icon';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 
@@ -5,6 +6,7 @@ type TimeLineItem = {
   titulo: string;
   texto?: string;
   date: string;
+  variantIcon: string
 };
 
 type PropsTimeLine = {
@@ -13,7 +15,7 @@ type PropsTimeLine = {
 
 export const TimeLine: React.FC<PropsTimeLine> = ({ timeLine }) => {
   return (
-    <VerticalTimeline className='cursor-default' lineColor='transparent'>
+    <VerticalTimeline className='cursor-default text-very-small top-14' lineColor='transparent'>
       {timeLine.map((item, index) => {
         const isOdd = index % 2 === 1;
         const contentStyle = {
@@ -31,11 +33,12 @@ export const TimeLine: React.FC<PropsTimeLine> = ({ timeLine }) => {
             className='font-montserrat'
             contentArrowStyle={{ boxShadow: '20px 20px 50px rgba(0, 0, 0, .5)', borderRight: '7px solid #4f4f4f' }}
             contentStyle={contentStyle}
-            iconStyle={{ background: 'transparent', boxShadow: '20px 20px 50px rgba(0, 0, 0, .5)', border: '1px solid rgba(255, 255, 255, .6)'}}
+            iconStyle={{ display:'flex', alignItems: 'center', color:'white',background: 'transparent', boxShadow: '20px 20px 50px rgba(0, 0, 0, .5)', border: '1px solid rgba(255, 255, 255, .6)'}}
             date={item.date}
+            icon={<Icon variant={item.variantIcon} width='40px' height='40px' marginLeft='ml-icon'/>}
           >
-            <h3>{item.titulo}</h3>
-            <p>{item.texto}</p>
+            <h3 className='text-center mb-4 text-very-small'>{item.titulo}</h3>
+            <p className='text-center'>{item.texto}</p>
           </VerticalTimelineElement>
         );
       })}

@@ -26,6 +26,9 @@ module.exports = {
       blur:{
         primary: '3.5rem'
       },
+      margin:{
+        icon: '9px'
+      }
     },
   },
   plugins: [],
