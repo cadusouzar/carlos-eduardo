@@ -7,6 +7,7 @@ type PropsButtonText = {
 
 
 export const ButtonText: React.FC<PropsButtonText> = ({text, variant}) => {
+
   return(
       <button className="text-medium text-font-primary font-montserrat">
         <Row>

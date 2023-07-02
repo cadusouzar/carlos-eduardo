@@ -10,10 +10,14 @@ type AnimationProps = {
   top?: string
   position?: any
   cursor?: string
+  link?: string
 }
 
-export const Animation: React.FC<AnimationProps> = ({variant, width, height, transform, marginLeft, top, position, cursor = 'pointer'}) => {
+export const Animation: React.FC<AnimationProps> = ({variant, width, height, transform, marginLeft, top, position, cursor = 'pointer', link}) => {
   const [animationSrc, setAnimationSrc] = useState()
+  const goToPage = () => {
+    window.open(`${link}`, '_blank');
+  }
 
   useEffect(() => {
     const mount = async () => {
@@ -24,6 +28,10 @@ export const Animation: React.FC<AnimationProps> = ({variant, width, height, tra
     mount()
   }, [variant])
 
-  return <Lottie animationData={animationSrc} alt={variant} loop={true} autoplay={true} style={{width:width, height:height, transform: transform, marginLeft: marginLeft, top: top, position: position, cursor: cursor}}/>
+  return (
+    <button onClick={() => goToPage()}>
+      <Lottie animationData={animationSrc} alt={variant} loop={true} autoplay={true} style={{width:width, height:height, transform: transform, marginLeft: marginLeft, top: top, position: position, cursor: cursor}}/>
+    </button>
+  )
 
 } 
