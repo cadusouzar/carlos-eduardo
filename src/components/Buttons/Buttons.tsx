@@ -7,8 +7,12 @@ export const Buttons = () => {
     <Link to='/skills'>
       <ButtonText text="habilidades" variant="skills"/>
     </Link>
+
       <ButtonText text="projetos" variant="project"/>
+
+    <Link to='/aboutme'>
       <ButtonText text="sobre mim" variant="aboutme"/>
+    </Link>
     </Column>
   )
 }
