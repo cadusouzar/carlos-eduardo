@@ -7,7 +7,6 @@ type AnimationProps = {
   marginLeft?: string
   position?: any
   cursor?: string
-  link?: string
   className?: string
 }
 
@@ -17,7 +16,6 @@ export const Animation: React.FC<AnimationProps> = ({
   marginLeft,
   position,
   cursor = 'pointer',
-  link,
   className
 }) => {
   const [animationSrc, setAnimationSrc] = useState();
@@ -31,14 +29,7 @@ export const Animation: React.FC<AnimationProps> = ({
     mount();
   }, [variant]);
 
-  const goToPage = () => {
-    window.open(link, '_blank');
-  };
-
-  const buttonProps = link ? { onClick: goToPage } : {};
-
   return (
-    <button {...buttonProps}>
       <Lottie
         className={className}
         animationData={animationSrc}
@@ -52,7 +43,6 @@ export const Animation: React.FC<AnimationProps> = ({
           cursor: cursor,
         }}
       />
-    </button>
   );
 };
 

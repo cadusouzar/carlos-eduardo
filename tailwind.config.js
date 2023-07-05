@@ -32,12 +32,21 @@ module.exports = {
       },
       width: {
         'animation-1080': '1250px',
-        'animation-1366': '950px'
+        'animation-1600': '1100px',
+        'animation-1366': '1000px',
+        'animation-1024': '900px',
       },
       height:{
         'animation-1080': '800px',
-        'animation-1366': '622px'
+        'animation-1600': '700px',
+        'animation-1366': '650px',
+        'animation-1024': '600px',
       },
+      screens:{
+        'biglg': '1400px',
+        'bigxl': '1500px',
+        '3xl': '1700px',
+      }
     },
   },
   plugins: [],
