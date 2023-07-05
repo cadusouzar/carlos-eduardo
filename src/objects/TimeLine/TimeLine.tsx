@@ -35,7 +35,7 @@ export const TimeLine: React.FC<PropsTimeLine> = ({ timeLine }) => {
             contentStyle={contentStyle}
             iconStyle={{ display:'flex', alignItems: 'center', color:'white',background: 'transparent', boxShadow: '20px 20px 50px rgba(0, 0, 0, .5)', border: '1px solid rgba(255, 255, 255, .6)'}}
             date={item.date}
-            icon={<Icon variant={item.variantIcon} width='40px' height='40px' marginLeft='ml-icon'/>}
+            icon={<Icon variant={item.variantIcon} marginLeft='ml-icon' width='w-10'/>}
           >
             <h3 className='text-center mb-4 text-very-small'>{item.titulo}</h3>
             <p className='text-center'>{item.texto}</p>

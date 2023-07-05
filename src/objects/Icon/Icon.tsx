@@ -4,10 +4,11 @@ type IconProps = {
   variant: string
   width?: string
   height?: string
+  marginRight?: string
   marginLeft?: string
 }
 
-export const Icon: React.FC<IconProps> = ({variant, width = '80px', height = '80px', marginLeft}) => {
+export const Icon: React.FC<IconProps> = ({variant, marginLeft, marginRight = 'mr-6', width, height}) => {
   const [iconSrc, setIconSrc] = useState()
 
   useEffect(() => {
@@ -19,5 +20,5 @@ export const Icon: React.FC<IconProps> = ({variant, width = '80px', height = '80
     mount()
   }, [variant])
 
-  return <img className={`mr-6 ${marginLeft}`} src={iconSrc} width={width} height={height} alt={variant}/> 
+  return <img className={`${marginLeft} ${marginRight} ${width} ${height}`} src={iconSrc} alt={variant}/> 
 }

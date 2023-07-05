@@ -48,23 +48,23 @@ export const Card: React.FC<PropsCard> = ({ variantsTitulo, variantsLinguagem, t
     <Tilt options={options}>
       <div className='Container'>
         <div className='Card'>
-          <div className='Content mt-2 w-full'>
+          <div className='Content 2xl:mt-2 w-full'>
             {variantsTitulo.map((variantItemTitulo: string) => (
-              <Icon key={variantItemTitulo} variant={variantItemTitulo} />
+              <Icon key={variantItemTitulo} variant={variantItemTitulo} width='lg:w-16 2xl:w-20'/>
             ))}
-            <Label text={tituloCard} size='text-medium-small' padding='p-7'/>
-            <div className='h-28'>
-              <Text text={text} size={size} />
+            <Label text={tituloCard} size='2xl:text-medium-small lg:text-small' padding='2xl:p-7 lg:p-4'/>
+            <div className='h-28 lg:mt-2 '>
+              <Text text={text} size={size}/>
             </div>
             <motion.div
               ref={divRef}
               initial={{ y: 50, opacity: 0 }}
               animate={controls}
-              className='flex flex-wrap justify-center space-y-7 mt-10'
+              className='flex flex-wrap justify-center space-y-7 2xl:mt-10 lg:mt-4'
             >
-              <Label text={tituloLinguagens} size="text-small"/>
+              <Label text={tituloLinguagens} size="2xl:text-small lg:text-small"/>
               {variantsLinguagem.map((variantItemLinguagem: string) => (
-                <Icon key={variantItemLinguagem} variant={variantItemLinguagem} />
+                <Icon key={variantItemLinguagem} variant={variantItemLinguagem} width='lg:w-14 2xl:w-20'/>
               ))}
             </motion.div>
           </div>

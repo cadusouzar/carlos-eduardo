@@ -11,10 +11,10 @@ export const NavTop:React.FC<PropsNavTop> = ({variantIcon, textLabel}) => {
     <div className="flex justify-center items-center mt-7">
     <Link to='/'>
       <div className="cursor-pointer">
-        <Icon variant={variantIcon}/>
+        <Icon variant={variantIcon} width="lg:w-20"/>
       </div>
     </Link>
-    <Label text={textLabel} size="text-extra-large"/>
+    <Label text={textLabel} size="2xl:text-extra-large lg:text-medium"/>
   </div>
   )
 }

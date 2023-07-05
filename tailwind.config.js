@@ -10,8 +10,9 @@ module.exports = {
         'font-primary': '#FFFFFF',
       },
       fontSize:{
-        'very-small': '26px',
-        'small':'1.8125rem',
+        'more-small': '1.3125rem',
+        'very-small': '1.625rem',
+        'small':'1.625rem',
         'medium-small':'2.25rem',
         'medium': '2.4375rem',
         'large': '2.5rem',
@@ -28,7 +29,15 @@ module.exports = {
       },
       margin:{
         icon: '9px'
-      }
+      },
+      width: {
+        'animation-1080': '1250px',
+        'animation-1366': '950px'
+      },
+      height:{
+        'animation-1080': '800px',
+        'animation-1366': '622px'
+      },
     },
   },
   plugins: [],

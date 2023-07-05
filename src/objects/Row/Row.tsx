@@ -1,7 +1,8 @@
 interface Props{
-  children: React.ReactNode
+  children: React.ReactNode,
+  marginTop?: string
 }
 
-export const Row: React.FC<Props> = ({children}) => {
-  return <div className="flex flex-row items-center mt-14">{children}</div>
+export const Row: React.FC<Props> = ({children, marginTop}) => {
+  return <div className={`flex flex-row items-center ${marginTop}`}>{children}</div>
 }
