@@ -1,18 +1,17 @@
-import { ButtonText, Column } from "objects"
-import { Link } from "react-router-dom"
+import { ButtonText, Column, LinkTo } from "objects"
 
 export const Buttons = () => {
   return( 
     <Column>
-      <Link to='/skills'>
+      <LinkTo to='/skills'>
         <ButtonText text="Habilidades" variant="skills"/>
-      </Link>
-      <Link to='/projects'>
+      </LinkTo>
+      <LinkTo to='/projects'>
         <ButtonText text="Projetos" variant="project"/>
-      </Link>
-      <Link to='/aboutme'>
+      </LinkTo>
+      <LinkTo to='/aboutme'>
         <ButtonText text="Sobre mim" variant="aboutme"/>
-      </Link>
+      </LinkTo>
     </Column>
   )
 }

@@ -11,8 +11,6 @@ export const ProjectsData = [
       { variantAnimation: 'github', linkAnimation: 'https://github.com/cadusouzar/sistema-de-emprestimo-react-js' },
       { variantAnimation: 'view', linkAnimation: 'https://emprestimos-nine.vercel.app/' },
     ],
-    width: '650px',
-    height: '',
   },
   {
     titulo: 'Sistema de Gerenciamento de Projetos',
@@ -26,8 +24,6 @@ export const ProjectsData = [
       { variantAnimation: 'github', linkAnimation: 'https://github.com/cadusouzar/sistema-administracao-de-projetos-react' },
       { variantAnimation: 'view', linkAnimation: 'https://administracao-de-projetos.vercel.app/' },
     ],
-    width: '650px',
-    height: '',
   },
   {
     titulo: 'Todo App',
@@ -41,8 +37,6 @@ export const ProjectsData = [
       { variantAnimation: 'github', linkAnimation: 'https://github.com/cadusouzar/todo-app' },
       { variantAnimation: 'view', linkAnimation: 'https://todo-app-five-plum.vercel.app/' },
     ],
-    width: '650px',
-    height: '',
   },
   {
     titulo: 'Organo',
@@ -56,8 +50,6 @@ export const ProjectsData = [
       { variantAnimation: 'github', linkAnimation: 'https://github.com/cadusouzar/alura-tsx-pt1' },
       { variantAnimation: 'view', linkAnimation: 'https://organo-react-omega.vercel.app/' },
     ],
-    width: '650px',
-    height: '',
   },
   {
     titulo: 'Jogo da Velha',
@@ -71,7 +63,5 @@ export const ProjectsData = [
       { variantAnimation: 'github', linkAnimation: 'https://github.com/cadusouzar/jogo-da-velha-react-js' },
       { variantAnimation: 'view', linkAnimation: 'https://jogo-da-velha-ten-hazel.vercel.app/' },
     ],
-    width: '250px',
-    height: '',
   },
 ];

@@ -1,7 +1,6 @@
 import { NavTop } from "components";
 import { timelineData } from "data";
-import { ButtonText, TimeLine } from "objects";
-import { Link } from "react-router-dom";
+import { ButtonText, LinkTo, TimeLine } from "objects";
 
 export const AboutMe = () => {
   return (
@@ -10,13 +9,13 @@ export const AboutMe = () => {
       <div>
         <TimeLine timeLine={timelineData} />
       </div>
-      <div className="flex justify-center space-x-20 mb-7">
-        <Link to='/skills'>
+      <div className="flex justify-center mb-4 mt-10 space-x-8 lg:space-x-20 lg:mb-8">
+        <LinkTo to='/skills'>
           <ButtonText variant="skills" text="Habilidades" />
-        </Link>
-        <Link to='/projects'>
+        </LinkTo>
+        <LinkTo to='/projects'>
           <ButtonText variant="project" text="Projetos" />
-        </Link>
+        </LinkTo>
       </div>
     </>
   );

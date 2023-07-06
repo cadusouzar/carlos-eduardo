@@ -2,11 +2,10 @@ import { useEffect, useState } from "react"
 
 type IconProps = {
   variant: string
-  width: string
-  height: string
+  classImage: string
 }
 
-export const Image: React.FC<IconProps> = ({variant, width, height }) => {
+export const Image: React.FC<IconProps> = ({variant, classImage }) => {
   const [imageSrc, setImageSrc] = useState()
 
   useEffect(() => {
@@ -18,5 +17,5 @@ export const Image: React.FC<IconProps> = ({variant, width, height }) => {
     mount()
   }, [variant])
 
-  return <img style={{borderRadius: '20px'}} src={imageSrc} width={width} height={height} alt={variant}/> 
+  return <img className={`${classImage}`} style={{borderRadius: '20px'}} src={imageSrc} alt={variant}/> 
 }

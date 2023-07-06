@@ -1,22 +1,21 @@
 import { CardsProject, NavTop } from "components"
-import { ButtonText } from "objects"
+import { ButtonText, LinkTo } from "objects"
 import { ProjectsData } from "data"
-import { Link } from "react-router-dom"
 
 export const Projects = () => {
   return(
     <>
       <NavTop variantIcon="react" textLabel="Projetos"/>
-      <div>
+      <div className="lg:-mt-8 3xl:mt-3">
         <CardsProject items={ProjectsData}/>
       </div>
-      <div className="flex justify-center space-x-20 mb-8">
-        <Link to='/aboutme'>
+      <div className="flex justify-center mb-4 mt-32 space-x-1 lg:space-x-20 lg:mb-8">
+        <LinkTo to='/aboutme'>
           <ButtonText variant="aboutme" text="Sobre mim"/>
-        </Link>
-        <Link to='/skills'>
+        </LinkTo>
+        <LinkTo to='/skills'>
           <ButtonText variant="project" text="Habilidades"/>
-        </Link>
+        </LinkTo>
       </div>
     </>
   )
