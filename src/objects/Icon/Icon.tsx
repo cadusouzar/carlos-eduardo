@@ -13,7 +13,7 @@ export const Icon: React.FC<IconProps> = ({variant, marginLeft, marginRight = 'm
 
   useEffect(() => {
     const mount = async () => {
-      const result = await import (`../../../public/icones/${variant}.png`)
+      const result = await import (`../../data/icones/${variant}.png`)
       setIconSrc(result.default)
     }
 

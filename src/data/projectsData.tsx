@@ -51,17 +51,17 @@ export const ProjectsData = [
       { variantAnimation: 'view', linkAnimation: 'https://organo-react-omega.vercel.app/' },
     ],
   },
-  {
-    titulo: 'Jogo da Velha',
-    text: 'Jogo da velha produzido com intuito de treinar e desenvolver habilidades em React-JS, criado como projeto final do curso de react do "Collab Code", um canal do YouTube com diversos conteúdos sobre programação.',
-    linguagensObject: [
-      { iconLinguagens: 'react', linguagens: 'ReactJs' },
-      { iconLinguagens: 'css', linguagens: 'Css' },
-    ],
-    variantImage: 'jogo-da-velha',
-    animationObject: [
-      { variantAnimation: 'github', linkAnimation: 'https://github.com/cadusouzar/jogo-da-velha-react-js' },
-      { variantAnimation: 'view', linkAnimation: 'https://jogo-da-velha-ten-hazel.vercel.app/' },
-    ],
-  },
+//   {
+//     titulo: 'Jogo da Velha',
+//     text: 'Jogo da velha produzido com intuito de treinar e desenvolver habilidades em React-JS, criado como projeto final do curso de react do "Collab Code", um canal do YouTube com diversos conteúdos sobre programação.',
+//     linguagensObject: [
+//       { iconLinguagens: 'react', linguagens: 'ReactJs' },
+//       { iconLinguagens: 'css', linguagens: 'Css' },
+//     ],
+//     variantImage: 'jogo-da-velha',
+//     animationObject: [
+//       { variantAnimation: 'github', linkAnimation: 'https://github.com/cadusouzar/jogo-da-velha-react-js' },
+//       { variantAnimation: 'view', linkAnimation: 'https://jogo-da-velha-ten-hazel.vercel.app/' },
+//     ],
+//   },
 ];
