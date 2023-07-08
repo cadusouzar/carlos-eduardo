@@ -28,7 +28,7 @@ export const CardsProject:React.FC<PropsCardsProject> = ({items}) => {
           linguagensObject={item.linguagensObject}
           variantImage={item.variantImage} 
           animationObject={item.animationObject}
-          marginText={index % 2 !== 0 ? 'xl:ml-12 xl:mr-4 3xl:ml-20' : 'xl:ml-12 xl:mr-4 3xl:mr-20'}
+          marginText={index % 2 !== 0 ? 'xl:ml-0 xl:mr-0 3xl:ml-20' : 'xl:ml-0 xl:mr-0 3xl:mr-20'}
           classImage={index % 2 !== 0 ? 'ContainerImageLeft' : 'ContainerImageRight'}/>
         </ContainerGrid>  
       ))}

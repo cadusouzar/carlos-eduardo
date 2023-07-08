@@ -62,9 +62,9 @@ export const Card: React.FC<PropsCard> = ({ variantsTitulo, variantsLinguagem, t
               animate={controls}
               className='flex flex-wrap justify-center space-y-7 w-96 ml-1 mt-20 md:w-56 md:mt-4 md:space-y-3 lg:w-72 lg:mt-12 xl:mt-4 biglg:w-full 3xl:mt-10 3xl:w-full'
             >
-              <Label text={tituloLinguagens} size="text-small md:text-real-small lg:text-more-small xl:text-small 3xl:text-small"/>
+              <Label text={tituloLinguagens} size="text-small md:text-real-small lg:text-more-small xl:text-small 3xl:text-small 3xl:mb-2"/>
               {variantsLinguagem.map((variantItemLinguagem: string) => (
-                <Icon key={variantItemLinguagem} variant={variantItemLinguagem} marginLeft='md:ml-2' width='w-14 md:w-10 lg:w-10 xl:w-14 3xl:w-20'/>
+                <Icon key={variantItemLinguagem} variant={variantItemLinguagem} marginLeft='md:ml-2 3xl:ml-0' width='w-14 md:w-10 lg:w-10 xl:w-14 3xl:w-20'/>
               ))}
             </motion.div>
           </div>

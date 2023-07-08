@@ -5,7 +5,7 @@ import { ProjectsData } from "data"
 export const Projects = () => {
   return(
     <>
-      <NavTop variantIcon="react" textLabel="Projetos"/>
+      <NavTop variantIcon="mylogo" textLabel="Projetos"/>
       <div className="lg:-mt-8 3xl:mt-3">
         <CardsProject items={ProjectsData}/>
       </div>

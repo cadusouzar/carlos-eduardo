@@ -5,7 +5,7 @@ import { ButtonText, LinkTo, TimeLine } from "objects";
 export const AboutMe = () => {
   return (
     <>
-      <NavTop variantIcon="react" textLabel="Sobre mim"/>
+      <NavTop variantIcon="mylogo" textLabel="Sobre mim"/>
       <div>
         <TimeLine timeLine={timelineData} />
       </div>

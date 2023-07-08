@@ -54,14 +54,14 @@ export const ItemProject:React.FC<PropsItemProject> = ({titulo, text, linguagens
   return(
     <>
       {
-      tamanhoTela <= 1024?
+      tamanhoTela <= 1400?
       <Tilt options={options}>
         <div className='flex justify-center md:mt-28 md:mr-20 lg:mr-20 lg:mt-28'>
           <Image variant={variantImage} classImage="md:ml-20 md:w-image-768 lg:w-image-1080"/>
         </div>
       </Tilt>
       : ""}
-      <div className={`text-center space-y-4 mt-10 -mb-28 md:text-center md:space-y-6 md:w-full lg:flex lg:flex-col lg:space-y-6 biglg:mr-20 biglg:w-1/2 biglg:space-y-8 biglg:text-start biglg:mt-12 biglg:mb-0 xl:space-y-6 xl:w-1/2 3xl:mr-20 3xl:w-1/3 3xl:space-y-8 3xl:text-start ${marginText} cursor-default`}>
+      <div className={`text-center space-y-4 mt-10 -mb-28 md:text-center md:space-y-6 md:w-full lg:flex lg:flex-col lg:space-y-6 biglg:mr-20 biglg:w-1/2 biglg:space-y-8 biglg:text-start biglg:mt-12 biglg:mb-0 xl:flex xl:flex-col xl:space-y-6 3xl:mr-20 3xl:w-1/3 3xl:space-y-8 3xl:text-start ${marginText} cursor-default`}>
         <div className="space-y-3 md:space-x-2 md:space-y-4 lg:space-y-4 biglg:space-x-0 xl:space-y-4 3xl:space-y-8 3xl:space-x-0">
           <h1 className="text-more-small md:text-small lg:text-small xl:text-medium-small 3xl:text-medium font-montserrat text-font-primary">{titulo}</h1>
           <p className="font-montserrat text-font-primary  mr-8 ml-8 text-real-small md:text-more-small lg:mr-0 lg:ml-0 lg:text-more-small biglg:text-more-small 3xl:text-more-small">{text}</p>
@@ -81,7 +81,7 @@ export const ItemProject:React.FC<PropsItemProject> = ({titulo, text, linguagens
         </div>
       </div>
       {
-      tamanhoTela > 1024 ?       
+      tamanhoTela > 1400 ?       
       <Tilt options={options}>
         <div className='biglg:mr-10 biglg:ml-12'>
           <Image variant={variantImage} classImage="md:ml-20 md:w-image-768 lg:w-image-1024 biglg:w-image-1080 biglg:ml-0 3xl:w-image-1080 3xl:ml-0"/>
