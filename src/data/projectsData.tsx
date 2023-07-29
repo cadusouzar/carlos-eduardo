@@ -9,7 +9,6 @@ export const ProjectsData = [
     variantImage: 'emprestimos',
     animationObject: [
       { variantAnimation: 'github', linkAnimation: 'https://github.com/cadusouzar/sistema-de-emprestimo-react-js' },
-      { variantAnimation: 'view', linkAnimation: 'https://emprestimos-nine.vercel.app/' },
     ],
   },
   {
@@ -22,7 +21,6 @@ export const ProjectsData = [
     variantImage: 'projetos',
     animationObject: [
       { variantAnimation: 'github', linkAnimation: 'https://github.com/cadusouzar/sistema-administracao-de-projetos-react' },
-      { variantAnimation: 'view', linkAnimation: 'https://administracao-de-projetos.vercel.app/' },
     ],
   },
   {
@@ -35,7 +33,6 @@ export const ProjectsData = [
     variantImage: 'todo',
     animationObject: [
       { variantAnimation: 'github', linkAnimation: 'https://github.com/cadusouzar/todo-app' },
-      { variantAnimation: 'view', linkAnimation: 'https://todo-app-five-plum.vercel.app/' },
     ],
   },
   {
@@ -48,7 +45,6 @@ export const ProjectsData = [
     variantImage: 'organo-react',
     animationObject: [
       { variantAnimation: 'github', linkAnimation: 'https://github.com/cadusouzar/alura-tsx-pt1' },
-      { variantAnimation: 'view', linkAnimation: 'https://organo-react-omega.vercel.app/' },
     ],
   },
 //   {
